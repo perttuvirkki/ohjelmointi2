@@ -362,22 +362,6 @@ Tämä tiedosto sijaitsee projektin hakemistossa `src/main/webapp`, jonka alla o
 
 Selaimen pyytäessä osoitetta http://localhost:8080/styles/demo.css Tomcat tarjoaa vastauksesi CSS-tiedostomme. Vastaavalla tavalla voisimme asettaa saataville myös kuvat ja JavaScript-tiedostot.
 
-```css
-/* this stylesheet is only used for verifying that serving static files works */
-body {
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: sans-serif;
-}
-.external-css {
-	background-color: #90EE90;
-	padding: 10px;
-}
-.time-now {
-	text-align: center;
-	font-size: 2em;
-}
-```
 
 ## Seuraavat askeleet
 
