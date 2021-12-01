@@ -324,11 +324,12 @@ Edellisen kappaleen esimerkissä pyyntö välitetään [`/WEB-INF/index.jsp`](sr
     <h1>🎉 Congratulations! 🎉</h1>
 
     <!-- ✄ content removed for brevity ✄ -->
+
     <p>
         The added information was set in an attribute
         <code>timeNow</code> and its value is:
     </p>
-    	<p class="time-now">${ timeNow }</p>
+    <p class="time-now">${ timeNow }</p>
 
     <!-- ✄ content removed for brevity ✄ -->
 </body>
