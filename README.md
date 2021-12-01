@@ -311,28 +311,26 @@ Huomaa, että JSP-sivun polku annetaan suhteessa `webapp`-hakemistoon, jossa sä
 Edellisen kappaleen esimerkissä pyyntö välitetään [`/WEB-INF/index.jsp`](src/main/webapp/WEB-INF/index.jsp)-tiedostolle. Tiedoston sisältö on typistettynä seuraava:
 
 ```jsp
-<%@ page language="java" contentType="text/html; utf-8"
-	pageEncoding="utf-8"%>
+<%@ page language="java" contentType="text/html; utf-8" pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Web application test page</title>
-	<link rel="stylesheet" href="/styles/demo.css">
+    <meta charset="utf-8">
+    <title>Web application test page</title>
+    <link rel="stylesheet" href="/styles/demo.css">
 </head>
 <body>
 
-	<h1>🎉 Congratulations! 🎉</h1>
+    <h1>🎉 Congratulations! 🎉</h1>
 
-	<!-- content removed for brevity -->
-	<p>
-		The added information was set in an attribute
-		<code>timeNow</code>
-		and its value is:
-	</p>
-	<p class="time-now">${ timeNow }</p>
+    <!-- ✄ content removed for brevity ✄ -->
+    <p>
+        The added information was set in an attribute
+        <code>timeNow</code> and its value is:
+    </p>
+    	<p class="time-now">${ timeNow }</p>
 
-	<!-- content removed for brevity -->
+    <!-- ✄ content removed for brevity ✄ -->
 </body>
 </html>
 ```
