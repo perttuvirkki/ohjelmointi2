@@ -360,7 +360,7 @@ Edellä esitellyssä sivupohjassa hyödynnetään ulkoista CSS-tiedostoa:
 
 Tämä tiedosto sijaitsee projektin hakemistossa `src/main/webapp`, jonka alla olevat tiedostot tarjotaan selaimelle staattisina tiedostoina (poikkeuksena `WEB-INF`).
 
-Selaimen pyytäessä osoitetta http://localhost:8080/styles/demo.css Tomcat tarjoaa vastauksesi CSS-tiedostomme. Vastaavalla tavalla voisimme asettaa saataville myös kuvat ja JavaScript-tiedostot.
+Selaimen pyytäessä osoitetta http://localhost:8080/styles/demo.css Tomcat tarjoaa vastauksesi CSS-tiedostomme. Vastaavalla tavalla voisimme asettaa saataville myös kuvat ja JavaScript-tiedostot sijoittamalla ne `src/main/webapp` hakemiston alle.
 
 
 ## Seuraavat askeleet
