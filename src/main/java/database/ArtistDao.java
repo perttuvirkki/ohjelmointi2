@@ -70,6 +70,6 @@ public class ArtistDao {
             this.db.close(connection, statement, ids);
         }
         return false;
-    }
-	
+    }    
 }
+

@@ -10,7 +10,7 @@
 	
 	<form method="post">
         <input name="artistName" required type="text"
-            placeholder=" type item here..." autofocus /> <input type="submit"
+            placeholder="add artist here..." autofocus /> <input type="submit"
             value="Add to list" />
     </form>
 	
@@ -18,7 +18,8 @@
 		<ul>
 		<c:forEach items="${artists}" var="artist">
 		<li>
-		<c:out  value="${artist.getName() }"/></li>
+		<a href="/albums?ArtistId=${artist.getId()}">
+		<c:out  value="${artist.getName() }"/></a></li>
 		</c:forEach>
 		</ul>
 	</body>
