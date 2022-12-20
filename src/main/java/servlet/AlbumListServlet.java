@@ -24,6 +24,7 @@ public class AlbumListServlet extends HttpServlet {
 
 		
 		List<Album> albums = this.dao.getAlbums(id);
+    	req.setAttribute("ArtistId", id);
 		req.setAttribute("albums", albums);
 		req.getRequestDispatcher("/WEB-INF/albums.jsp").forward(req, resp);
 	}

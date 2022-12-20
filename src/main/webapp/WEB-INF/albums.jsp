@@ -9,7 +9,7 @@
 	<body>
 	
 	
-	<h1>Albums by</h1>
+	<h1>Albums by ${ArtistId}</h1>
 		<ul>
 		<c:forEach items="${albums}" var="album">
 		<li>
