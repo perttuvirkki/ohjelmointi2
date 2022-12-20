@@ -13,6 +13,11 @@
             placeholder="add artist here..." autofocus /> <input type="submit"
             value="Add to list" />
     </form>
+   	<form action="<%=application.getContextPath() + "/search.jsp"%>" method="get">
+       <input name="search" required type="text"
+           placeholder="serach by artist..." /> <input type="submit"
+           value="Search" />
+    </form>
 	
 	<h1>All artists</h1>
 		<ul>

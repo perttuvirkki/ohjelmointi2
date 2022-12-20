@@ -70,6 +70,35 @@ public class ArtistDao {
             this.db.close(connection, statement, ids);
         }
         return false;
-    }    
+    }
+
+	public List<Artist> searchArtists() {
+		String selectAll = "SELECT ArtistId, Name FROM Artist WHERE Name LIKE ? ORDER BY Name ASC;";
+		Connection connection = null;
+		PreparedStatement statement = null;
+		ResultSet results = null;
+		List<Artist> artistQuery = new ArrayList<>();
+		
+		try {
+			connection = db.connect();
+			statement = connection.prepareStatement(selectAll);
+			results = statement.executeQuery();
+			
+			while (results.next()) {
+				long id = results.getLong("ArtistId");
+				String name = results.getString("Name");
+				
+				Artist a = new Artist(id, name);
+				artistQuery.add(a);
+			}
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			this.db.close(connection, statement, results);;
+		}
+				
+		return artistQuery;
+	}    
 }
 

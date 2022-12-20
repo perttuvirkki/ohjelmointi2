@@ -36,6 +36,4 @@ public class ArtistListServlet extends HttpServlet {
 
         resp.sendRedirect("/");
     }
-	
-	
 }
